@@ -5,7 +5,7 @@
 #
 # Git repository to clone OpenWRT
 #
-CUSTOM_OPENWRT_GIT=https://github.com/openwrt-mirror/openwrt.git
+CUSTOM_OPENWRT_GIT=git://git.openwrt.org/14.07/openwrt.git
 
 #
 # Git repository branch
@@ -35,6 +35,8 @@ CUSTOM_FILES=files/
 #
 # Make concurrency
 #
-CUSTOM_MAKE_CONCURRENCY=2
+CUSTOM_MAKE_CONCURRENCY=4
 
+# Uncomment this to use a local mirror instead of the Internet
+# CUSTOM_OPENWRT_GIT=/scratch/develop/openwrt.bb
 
